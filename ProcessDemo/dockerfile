@@ -1,0 +1,13 @@
+FROM node:12.12.0-alpine
+
+WORKDIR /usr/src/app
+
+RUN apk update && \
+    npm  -g npm @vue/cli \
+    npm i vue-router
+
+# EXPOSE 8082
+
+# シェルに入る
+CMD ["/bin/sh"]
+
