@@ -20,7 +20,7 @@ fakeAPI(payment) {
 // 8番目のボタン
 async buyApple5() {
     // await は Promise の値が取り出されるまでまつ
-    // 処理に失敗した場合は catch に入る
+    // 処理に失敗した場合(==ngFuncが帰って来た場合)は catch に入る
     const self = this;
     try {
     var status = await self.fakeAPI(1000);
